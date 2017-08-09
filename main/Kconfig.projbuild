@@ -1,23 +1,21 @@
-menu "Local Configuration"
+menu "Wifi Configuration"
 
 config WIFI_SSID
     string "WiFi SSID"
-    default "myssid"
     help
         SSID (network name) for the device to connect to.
 
 config WIFI_PASSWORD
     string "WiFi Password"
-    default "myssid"
     help
         WiFi password (WPA or WPA2) for the device to use.
 
         Can be left blank if the network has no security set.
 
-config AWS_EXAMPLE_CLIENT_ID
-    string "AWS IoT Client ID"
+config MQTT_CLIENT_ID
+    string "MQTT Client ID"
     default "myesp32"
     help
-        AWS IoT Client ID for the example. Should be unique for every device.
+        MQTT Client ID for this device.
 
 endmenu

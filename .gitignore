@@ -3,3 +3,14 @@ bin
 build
 *.old
 sdkconfig
+
+data/cert.pem
+data/key.pem
+main/certkey.pem
+
+#generated header files
+main/indexhtml.h
+main/keypem.h
+main/certpem.h
+
+.vscode
